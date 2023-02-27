@@ -71,21 +71,33 @@
 		font-family: Candara;
 		text-align: center;
 		margin-top: 0;
-		color: lightgreen;
+		color: gray;
 		font-size: 50px;
-		text-shadow: 0px 0px 40px green	;
+		text-shadow: 0px 0px 40px gray	;
 	}
 </style>
 <body>
+	<script>
+		function redirect(el) {
+			if (el.id == "roblox") {
+				window.location.href = "https://www.roblox.com/users/97112952";
+			}
+			else
+			{
+				window.location.href = "https://www.github.com/TheOfficialPeter";
+			}				
+		}
+	</script>
+
 	<div id="body">
 		<div style="border: 2px solid white; border-radius: 20px; position: absolute; width: 300px; left: calc(50% - 300px/2); height: 500px; top: calc(50% - 500px/2); background-color: rgba(0,0,0,.8); box-shadow: 0px 0px 20px rgba(0,0,0,.8); -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px);">
 			<div style="border: 3px solid white; border-radius: 50%; background-color: white; width: 100px; height: 100px; left: calc(50% - 100px/2); position: absolute; top: 20px; background-image: url('https://cdn.discordapp.com/avatars/368756571481702401/720d496c2bace268bfda153841e246fa.webp?size=160'); background-size: cover;"></div>
 			<h1>@TheOfficialPeter</h1>
-			<div class="link">Github</div>
-			<div class="link">Roblox</div>
+			<div id="github" onclick="redirect(this)" class="link">Github</div>
+			<div id="roblox" onclick="redirect(this)" class="link">Roblox</a></div>
 			<div id="status">
 				<h2>Discord status:</h2>
-				<h3>Online</h3>
+				<h3>Not yet</h3>
 			</div>
 		</div>
 	</div>
